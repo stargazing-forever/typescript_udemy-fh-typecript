@@ -13,7 +13,7 @@
   contar(superHeroes);
 
   //Parametros por defecto
-  const llamarBatman = ( llamar: boolean = true  ) => {
+  const llamarBatman = ( llamar: boolean = true  ): void => {
     if( llamar ){
       console.log("Batiseñal activada");
     }
@@ -22,7 +22,7 @@
   llamarBatman();
 
   // Rest?
-  const unirheroes = ( ...personas: string[] ) => {
+  const unirheroes = ( ...personas: string[] ): string => {
     return personas.join(", ");
   }
 
@@ -32,6 +32,7 @@
 
   // Crear el tipo de funcion que acepte la funcion "noHaceNada"
   let noHaceNadaTampoco: (n: number, t: string, b: boolean, a: string[] ) => void;
+  
   noHaceNadaTampoco = noHaceNada
 
 })()
